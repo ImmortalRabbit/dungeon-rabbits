@@ -1,0 +1,9 @@
+export const CHARACTER_SIZE = 64;
+export const MAX_HEIGHT = 896;
+export const MAX_WIDTH = 1280;
+export const MAX_Y = MAX_WIDTH/CHARACTER_SIZE;
+export const MAX_X = MAX_HEIGHT/CHARACTER_SIZE;
+export const LEFT = 65;
+export const UP = 87;
+export const RIGHT = 68;
+export const DOWN = 83;
