@@ -40,7 +40,7 @@ function generateEnvironment(){
     let environment = [];
     for (let x = 0; x < MAX_HEIGHT; x+=CHARACTER_SIZE) {
         for (let y = 0; y < MAX_WIDTH; y+=CHARACTER_SIZE) {        
-            const randomNumber = randomInt(0, 1);
+            const randomNumber = randomInt(0, 2);
             // const randomNumber = 0;
             switch(randomNumber){
                 case 0:
@@ -55,9 +55,9 @@ function generateEnvironment(){
                 // case 3:
                 //     environment.push(createRock(x, y));
                 //     break;
-                // case 4:
-                //     environment.push(createTree(x, y));
-                //     break;
+                case 2:
+                    environment.push(createTree(x, y));
+                    break;
             }
         }  
     }

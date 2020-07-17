@@ -13,6 +13,7 @@ export function generateStyles(position: Position, elementName: string): CSSProp
       left: position.y + "px",
       transition: "1s",
       background: getBackground(elementName),
+      backgroundSize: elementName === "Tree" ? "contain" : "",
       width: CHARACTER_SIZE + "px",
       height: CHARACTER_SIZE + "px",
     };
@@ -26,7 +27,7 @@ function getBackground(elementName: string): string{
         return "url('land.png') no-repeat 0 -128px";
     }
     if(elementName === "Tree"){
-        return "url('land.png') no-repeat -64px -128px";
+        return "url('tree.png') no-repeat center";
     }
     if(elementName === "Water"){
         return "blue";
